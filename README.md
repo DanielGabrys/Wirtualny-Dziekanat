@@ -1,4 +1,5 @@
 # Wirtualny-Dziekanat
+author: Daniel Gabryś \ \
 Students and lecturer management system 
 
 
