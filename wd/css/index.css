@@ -1,0 +1,51 @@
+#hello_page{
+    margin-left: auto;
+    margin-right: auto;
+    width:1170px;
+}
+
+.hello_img{
+    float: left;
+    text-align: center;
+    width: 350px;
+    padding: 10px;
+    height: 350px;
+    background-color: #33ccff;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:#003399;
+}
+
+.hello_choice{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.hello_img:hover{
+    color: white;
+    background-color: #3399FF;
+} 
+.offert
+{
+ text-align:center;
+ width:150px;
+ background-color:grey;
+ padding: 10px;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:50px;
+ color:black;
+a lin 
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+.offert:hover
+{
+ background-color:#A9A9A9;
+}
+
