@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: May 19, 2021 at 11:36 AM
--- Server version: 8.0.22
--- PHP Version: 8.0.2
+-- Czas generowania: 19 Maj 2021, 21:02
+-- Wersja serwera: 8.0.22
+-- Wersja PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,12 +18,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wd`
+-- Baza danych: `wd`
 --
 
 DELIMITER $$
 --
--- Procedures
+-- Procedury
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `prowadzacy_lista` (IN `a` VARCHAR(5), IN `b` VARCHAR(5), IN `c` VARCHAR(5))  NO SQL
 BEGIN
@@ -72,7 +72,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kierunki`
+-- Struktura tabeli dla tabeli `kierunki`
 --
 
 CREATE TABLE `kierunki` (
@@ -82,7 +82,7 @@ CREATE TABLE `kierunki` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `kierunki`
+-- Zrzut danych tabeli `kierunki`
 --
 
 INSERT INTO `kierunki` (`ID`, `kierunek`, `wydzial_id`) VALUES
@@ -101,7 +101,7 @@ INSERT INTO `kierunki` (`ID`, `kierunek`, `wydzial_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kierunki_przedmioty`
+-- Struktura tabeli dla tabeli `kierunki_przedmioty`
 --
 
 CREATE TABLE `kierunki_przedmioty` (
@@ -113,7 +113,7 @@ CREATE TABLE `kierunki_przedmioty` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `kierunki_przedmioty`
+-- Zrzut danych tabeli `kierunki_przedmioty`
 --
 
 INSERT INTO `kierunki_przedmioty` (`ID`, `kierunek_id`, `przedmiot_id`, `ETC`, `semestr`) VALUES
@@ -159,7 +159,7 @@ INSERT INTO `kierunki_przedmioty` (`ID`, `kierunek_id`, `przedmiot_id`, `ETC`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kierunki_przedmioty_prowadzacy`
+-- Struktura tabeli dla tabeli `kierunki_przedmioty_prowadzacy`
 --
 
 CREATE TABLE `kierunki_przedmioty_prowadzacy` (
@@ -169,7 +169,7 @@ CREATE TABLE `kierunki_przedmioty_prowadzacy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
--- Dumping data for table `kierunki_przedmioty_prowadzacy`
+-- Zrzut danych tabeli `kierunki_przedmioty_prowadzacy`
 --
 
 INSERT INTO `kierunki_przedmioty_prowadzacy` (`ID`, `kierunki_przedmioty_id`, `prowadzacy_id`) VALUES
@@ -215,7 +215,7 @@ INSERT INTO `kierunki_przedmioty_prowadzacy` (`ID`, `kierunki_przedmioty_id`, `p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pracownicy`
+-- Struktura tabeli dla tabeli `pracownicy`
 --
 
 CREATE TABLE `pracownicy` (
@@ -229,7 +229,7 @@ CREATE TABLE `pracownicy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
--- Dumping data for table `pracownicy`
+-- Zrzut danych tabeli `pracownicy`
 --
 
 INSERT INTO `pracownicy` (`ID`, `imie`, `nazwisko`, `mail`, `haslo`, `wydzial_id`, `super_admin`) VALUES
@@ -239,7 +239,7 @@ INSERT INTO `pracownicy` (`ID`, `imie`, `nazwisko`, `mail`, `haslo`, `wydzial_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prowadzacy`
+-- Struktura tabeli dla tabeli `prowadzacy`
 --
 
 CREATE TABLE `prowadzacy` (
@@ -251,7 +251,7 @@ CREATE TABLE `prowadzacy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `prowadzacy`
+-- Zrzut danych tabeli `prowadzacy`
 --
 
 INSERT INTO `prowadzacy` (`ID`, `imie`, `nazwisko`, `mail`, `haslo`) VALUES
@@ -272,7 +272,7 @@ INSERT INTO `prowadzacy` (`ID`, `imie`, `nazwisko`, `mail`, `haslo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `przedmioty`
+-- Struktura tabeli dla tabeli `przedmioty`
 --
 
 CREATE TABLE `przedmioty` (
@@ -281,7 +281,7 @@ CREATE TABLE `przedmioty` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `przedmioty`
+-- Zrzut danych tabeli `przedmioty`
 --
 
 INSERT INTO `przedmioty` (`ID`, `nazwa`) VALUES
@@ -306,7 +306,7 @@ INSERT INTO `przedmioty` (`ID`, `nazwa`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `studenci`
+-- Struktura tabeli dla tabeli `studenci`
 --
 
 CREATE TABLE `studenci` (
@@ -320,7 +320,7 @@ CREATE TABLE `studenci` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `studenci`
+-- Zrzut danych tabeli `studenci`
 --
 
 INSERT INTO `studenci` (`ID`, `imie`, `nazwisko`, `telefon`, `nr_album`, `haslo`, `mail`) VALUES
@@ -347,7 +347,7 @@ INSERT INTO `studenci` (`ID`, `imie`, `nazwisko`, `telefon`, `nr_album`, `haslo`
 (47, 'Jan', 'Sobieski', 384725962, 100024, '$2y$10$0L31Plc9/D3HjQpUtrQoJOInzCgML38VLcUgVbah8BLPoPWQ5.tC6', 'js@gmail.com');
 
 --
--- Triggers `studenci`
+-- Wyzwalacze `studenci`
 --
 DELIMITER $$
 CREATE TRIGGER `delete_oceny` AFTER DELETE ON `studenci` FOR EACH ROW DELETE from studenci_oceny WHERE student_id
@@ -358,7 +358,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `studenci_kierunki`
+-- Struktura tabeli dla tabeli `studenci_kierunki`
 --
 
 CREATE TABLE `studenci_kierunki` (
@@ -370,7 +370,7 @@ CREATE TABLE `studenci_kierunki` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `studenci_kierunki`
+-- Zrzut danych tabeli `studenci_kierunki`
 --
 
 INSERT INTO `studenci_kierunki` (`ID`, `kierunek_id`, `student_id`, `semestr`, `rok_rozpoczecia`) VALUES
@@ -390,8 +390,8 @@ INSERT INTO `studenci_kierunki` (`ID`, `kierunek_id`, `student_id`, `semestr`, `
 (16, 9, 15, 1, 2020),
 (17, 9, 16, 1, 2020),
 (18, 10, 17, 3, 2019),
-(19, 11, 18, 1, 2020),
-(20, 11, 19, 1, 2020),
+(19, 7, 18, 1, 2020),
+(20, 8, 19, 1, 2020),
 (21, 10, 20, 1, 2020),
 (22, 8, 21, 3, 2019),
 (23, 4, 22, 2, 2020),
@@ -403,7 +403,7 @@ INSERT INTO `studenci_kierunki` (`ID`, `kierunek_id`, `student_id`, `semestr`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `studenci_oceny`
+-- Struktura tabeli dla tabeli `studenci_oceny`
 --
 
 CREATE TABLE `studenci_oceny` (
@@ -414,7 +414,7 @@ CREATE TABLE `studenci_oceny` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
--- Dumping data for table `studenci_oceny`
+-- Zrzut danych tabeli `studenci_oceny`
 --
 
 INSERT INTO `studenci_oceny` (`ID`, `student_id`, `ocena`, `kier_przed_prow`) VALUES
@@ -464,7 +464,7 @@ INSERT INTO `studenci_oceny` (`ID`, `student_id`, `ocena`, `kier_przed_prow`) VA
 (54, 11, NULL, 2),
 (55, 11, NULL, 3),
 (56, 12, NULL, 13),
-(57, 12, 3, 14),
+(57, 12, 4, 14),
 (58, 12, NULL, 15),
 (59, 12, NULL, 16),
 (60, 13, NULL, 17),
@@ -500,7 +500,7 @@ INSERT INTO `studenci_oceny` (`ID`, `student_id`, `ocena`, `kier_przed_prow`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wydzialy`
+-- Struktura tabeli dla tabeli `wydzialy`
 --
 
 CREATE TABLE `wydzialy` (
@@ -510,7 +510,7 @@ CREATE TABLE `wydzialy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
--- Dumping data for table `wydzialy`
+-- Zrzut danych tabeli `wydzialy`
 --
 
 INSERT INTO `wydzialy` (`ID`, `wydzial`, `dziekan`) VALUES
@@ -522,18 +522,18 @@ INSERT INTO `wydzialy` (`ID`, `wydzial`, `dziekan`) VALUES
 (7, 'Humanistyczny', 'Barbara Lis');
 
 --
--- Indexes for dumped tables
+-- Indeksy dla zrzutów tabel
 --
 
 --
--- Indexes for table `kierunki`
+-- Indeksy dla tabeli `kierunki`
 --
 ALTER TABLE `kierunki`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `wydzial_id` (`wydzial_id`);
 
 --
--- Indexes for table `kierunki_przedmioty`
+-- Indeksy dla tabeli `kierunki_przedmioty`
 --
 ALTER TABLE `kierunki_przedmioty`
   ADD PRIMARY KEY (`ID`),
@@ -541,7 +541,7 @@ ALTER TABLE `kierunki_przedmioty`
   ADD KEY `przedmiot_id` (`przedmiot_id`);
 
 --
--- Indexes for table `kierunki_przedmioty_prowadzacy`
+-- Indeksy dla tabeli `kierunki_przedmioty_prowadzacy`
 --
 ALTER TABLE `kierunki_przedmioty_prowadzacy`
   ADD PRIMARY KEY (`ID`),
@@ -549,25 +549,25 @@ ALTER TABLE `kierunki_przedmioty_prowadzacy`
   ADD KEY `prowadzacy_id` (`prowadzacy_id`);
 
 --
--- Indexes for table `pracownicy`
+-- Indeksy dla tabeli `pracownicy`
 --
 ALTER TABLE `pracownicy`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `prowadzacy`
+-- Indeksy dla tabeli `prowadzacy`
 --
 ALTER TABLE `prowadzacy`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `przedmioty`
+-- Indeksy dla tabeli `przedmioty`
 --
 ALTER TABLE `przedmioty`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `studenci`
+-- Indeksy dla tabeli `studenci`
 --
 ALTER TABLE `studenci`
   ADD PRIMARY KEY (`ID`),
@@ -575,14 +575,15 @@ ALTER TABLE `studenci`
   ADD UNIQUE KEY `telefon` (`telefon`);
 
 --
--- Indexes for table `studenci_kierunki`
+-- Indeksy dla tabeli `studenci_kierunki`
 --
 ALTER TABLE `studenci_kierunki`
   ADD PRIMARY KEY (`ID`),
-  ADD KEY `student_id` (`student_id`);
+  ADD KEY `student_id` (`student_id`),
+  ADD KEY `studenci_kierunki_ibfk_2` (`kierunek_id`);
 
 --
--- Indexes for table `studenci_oceny`
+-- Indeksy dla tabeli `studenci_oceny`
 --
 ALTER TABLE `studenci_oceny`
   ADD PRIMARY KEY (`ID`),
@@ -590,107 +591,108 @@ ALTER TABLE `studenci_oceny`
   ADD KEY `kier_przed_prow` (`kier_przed_prow`);
 
 --
--- Indexes for table `wydzialy`
+-- Indeksy dla tabeli `wydzialy`
 --
 ALTER TABLE `wydzialy`
   ADD PRIMARY KEY (`ID`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT dla zrzuconych tabel
 --
 
 --
--- AUTO_INCREMENT for table `kierunki`
+-- AUTO_INCREMENT dla tabeli `kierunki`
 --
 ALTER TABLE `kierunki`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `kierunki_przedmioty`
+-- AUTO_INCREMENT dla tabeli `kierunki_przedmioty`
 --
 ALTER TABLE `kierunki_przedmioty`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
--- AUTO_INCREMENT for table `kierunki_przedmioty_prowadzacy`
+-- AUTO_INCREMENT dla tabeli `kierunki_przedmioty_prowadzacy`
 --
 ALTER TABLE `kierunki_przedmioty_prowadzacy`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `pracownicy`
+-- AUTO_INCREMENT dla tabeli `pracownicy`
 --
 ALTER TABLE `pracownicy`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `prowadzacy`
+-- AUTO_INCREMENT dla tabeli `prowadzacy`
 --
 ALTER TABLE `prowadzacy`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `przedmioty`
+-- AUTO_INCREMENT dla tabeli `przedmioty`
 --
 ALTER TABLE `przedmioty`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `studenci`
+-- AUTO_INCREMENT dla tabeli `studenci`
 --
 ALTER TABLE `studenci`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- AUTO_INCREMENT for table `studenci_kierunki`
+-- AUTO_INCREMENT dla tabeli `studenci_kierunki`
 --
 ALTER TABLE `studenci_kierunki`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
--- AUTO_INCREMENT for table `studenci_oceny`
+-- AUTO_INCREMENT dla tabeli `studenci_oceny`
 --
 ALTER TABLE `studenci_oceny`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
--- AUTO_INCREMENT for table `wydzialy`
+-- AUTO_INCREMENT dla tabeli `wydzialy`
 --
 ALTER TABLE `wydzialy`
   MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Constraints for dumped tables
+-- Ograniczenia dla zrzutów tabel
 --
 
 --
--- Constraints for table `kierunki`
+-- Ograniczenia dla tabeli `kierunki`
 --
 ALTER TABLE `kierunki`
   ADD CONSTRAINT `kierunki_ibfk_1` FOREIGN KEY (`wydzial_id`) REFERENCES `wydzialy` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `kierunki_przedmioty`
+-- Ograniczenia dla tabeli `kierunki_przedmioty`
 --
 ALTER TABLE `kierunki_przedmioty`
   ADD CONSTRAINT `kierunki_przedmioty_ibfk_1` FOREIGN KEY (`kierunek_id`) REFERENCES `kierunki` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `kierunki_przedmioty_ibfk_2` FOREIGN KEY (`przedmiot_id`) REFERENCES `przedmioty` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `kierunki_przedmioty_prowadzacy`
+-- Ograniczenia dla tabeli `kierunki_przedmioty_prowadzacy`
 --
 ALTER TABLE `kierunki_przedmioty_prowadzacy`
   ADD CONSTRAINT `kierunki_przedmioty_prowadzacy_ibfk_1` FOREIGN KEY (`kierunki_przedmioty_id`) REFERENCES `kierunki_przedmioty` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `kierunki_przedmioty_prowadzacy_ibfk_2` FOREIGN KEY (`prowadzacy_id`) REFERENCES `prowadzacy` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `studenci_kierunki`
+-- Ograniczenia dla tabeli `studenci_kierunki`
 --
 ALTER TABLE `studenci_kierunki`
-  ADD CONSTRAINT `studenci_kierunki_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `studenci` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `studenci_kierunki_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `studenci` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `studenci_kierunki_ibfk_2` FOREIGN KEY (`kierunek_id`) REFERENCES `kierunki` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `studenci_oceny`
+-- Ograniczenia dla tabeli `studenci_oceny`
 --
 ALTER TABLE `studenci_oceny`
   ADD CONSTRAINT `studenci_oceny_ibfk_1` FOREIGN KEY (`kier_przed_prow`) REFERENCES `kierunki_przedmioty_prowadzacy` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
