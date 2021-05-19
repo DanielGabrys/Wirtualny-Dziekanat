@@ -1,5 +1,5 @@
 # Wirtualny-Dziekanat
-Students and lecturer management system <--
+Students and lecturer management system \\
 
 
 CHECK OUT HOW IT WORKS HERE https://wirtualnydziekanat.000webhostapp.com/
@@ -12,9 +12,9 @@ AS WORKER - you have access to students and workers, you can manage them adding/
 
 
 
-EXAMPLE LOGIN AS STUDENT: <--
-LOGIN: 100006
-PASSWORD :qwerty123
+EXAMPLE LOGIN AS STUDENT: \
+LOGIN: 100006\
+PASSWORD :qwerty123\
 
 EXAMPLE LOGIN AS TEACHER:
 LOGIN: c
