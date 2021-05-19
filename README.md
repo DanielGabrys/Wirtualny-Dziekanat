@@ -1,5 +1,5 @@
 # Wirtualny-Dziekanat
-Students and lecturer management system \
+Students and lecturer management system 
 
 
 CHECK OUT HOW IT WORKS HERE https://wirtualnydziekanat.000webhostapp.com/ 
