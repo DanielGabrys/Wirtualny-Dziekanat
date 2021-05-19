@@ -50,7 +50,7 @@ mysql
 CREATE DATABASE new_db_name;
 mysql (–u username –p) new_db_name < dump_file.sql
 
-6. Edit file conected.php:
+6. Edit file connect.php:
 
 $username = "root";
 $password = "your password";
