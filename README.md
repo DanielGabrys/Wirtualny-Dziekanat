@@ -5,8 +5,12 @@ System zarządzania studentami, pracownikami uczelni
 CHECK OUT HOW IT WORKS HERE https://wirtualnydziekanat.000webhostapp.com/
 
 AS STUDENT - you have access to your marks and information about your faculty
+
 AS TEACHER - you have access to students data, for exmaple you can modify their marks
+
 AS WORKER - you have access to students and workers, you can manage them adding/deleting students or changing teachers
+
+
 
 EXAMPLE LOGIN AS STUDENT:
 LOGIN: 100006
@@ -23,9 +27,11 @@ PASSWORD :qwerty12345
 
 
 INSTALLATION LINUX
+
 0. Loggin as administartor :
 
 su [name]
+
 Install apache2
 
 apt-get install apache2
