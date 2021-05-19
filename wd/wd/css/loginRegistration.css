@@ -1,0 +1,129 @@
+ .login_form{
+     margin-left: auto;
+     margin-right: auto;
+     padding: 100px;
+     width: 400px;
+     background-color: #33ccff;
+     margin-top: 60px;
+     font-size: 18px;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+input[type=text],
+input[type=password],
+input[type=date]{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: #efefef;
+    color: rgb(48, 48, 48);
+    border: 2px solid #3399FF;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=date]:focus
+{
+    border: 4px solid #003399;
+    color: #003399;
+}
+
+input[type=submit]
+{
+    width: 300px;
+    background-color: #003399;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    letter-spacing: 2px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover{
+    background-color: #3399FF;
+    color: rgb(48, 48, 48);
+
+}
+
+
+.registration{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    color: white;
+    font-size: 44px;
+    background-color: #003399;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.registration:link{
+    color: white;
+    text-decoration: none;
+}
+
+.registration:hover{
+    background-color: #3399FF;
+    border: 4px solid #003399;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+a .registration:active{
+    text-decoration: none;
+}
+
+.back{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    color: white;
+    font-size: 44px;
+    background-color: #003399;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.back:link{
+    color: white;
+    text-decoration: none;
+}
+
+.back:hover{
+    background-color: #3399FF;
+
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+a .back:active{
+    text-decoration: none;
+    background-color: #3399FF;
+    color: rgb(48, 48, 48);
+}
+
