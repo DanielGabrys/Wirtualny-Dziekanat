@@ -1,9 +1,9 @@
 # Wirtualny-Dziekanat
-System zarządzania studentami, pracownikami uczelni
+Students and lecturer management system <--
 
 
 CHECK OUT HOW IT WORKS HERE https://wirtualnydziekanat.000webhostapp.com/
-
+<--
 AS STUDENT - you have access to your marks and information about your faculty
 
 AS TEACHER - you have access to students data, for exmaple you can modify their marks
@@ -12,7 +12,7 @@ AS WORKER - you have access to students and workers, you can manage them adding/
 
 
 
-EXAMPLE LOGIN AS STUDENT:
+EXAMPLE LOGIN AS STUDENT: <--
 LOGIN: 100006
 PASSWORD :qwerty123
 
