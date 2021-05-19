@@ -465,19 +465,19 @@ table, th, td
 	height: 5px;
 	margin-left:10px;
 	background:blue;
-	width:90%;
+	width:100%;
 	margin-bottom:20px;
 	float:left;
 	}
 .con
 	{
 		position:relative;
-		width:90%;
+		width:1300px;
 	}
 	
 #f1
 	{
-		width:90%;
+		width:100%;
 		float:left;
 		margin-left:10px;
 		text-align:left;

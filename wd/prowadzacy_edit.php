@@ -446,7 +446,7 @@ table, th, td
 	height: 5px;
 	margin-left:10px;
 	background:blue;
-	width:90%;
+	width:100%;
 	margin-bottom:20px;
 	float:left;
 	}

@@ -1,6 +1,6 @@
 <?php
     $servername="localhost";
-    $username="root";
-    $password="Teoriakwantowa1";
-    $database="wd";
+    $username="your_user";
+    $password="your_password";
+    $database="database_name";
 ?> 

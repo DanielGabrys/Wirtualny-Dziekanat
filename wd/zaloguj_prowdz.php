@@ -37,7 +37,7 @@ else
 			{
 
 				$_SESSION['prowdz_id']=$wiersz['ID'];
-				$_SESSION['dane']=$wiersz['prowadzacy'];
+				$_SESSION['dane']=$wiersz['imie']." ".$wiersz['nazwisko'];
 
 				$_SESSION['prowdz']=true;
 				unset($_SESSION['blad']);

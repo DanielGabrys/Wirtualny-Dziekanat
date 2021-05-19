@@ -166,7 +166,7 @@ for($i=0;$i<count($faculty);$i++)
 	
 ?> 
 <div id="space"> </div> 
-<div id="line"> </div> 
+
 
 
 
@@ -331,15 +331,15 @@ table, th, td
 .con
 	{
 		position:relative;
-		width:65%;
+		width:900px;
 	}
 	
 #f1
 	{
-		width:75%;
+		width:900px;
 		float:left;
 		margin-left:10px;
-		text-align:right;
+		
 	}
 </style>
 
