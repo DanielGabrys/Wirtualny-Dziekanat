@@ -13,31 +13,32 @@ AS WORKER - you have access to students and workers, you can manage them adding/
 
 
 EXAMPLE LOGIN AS STUDENT: \
-LOGIN: 100006\
-PASSWORD :qwerty123\
+LOGIN: 100006 \
+PASSWORD :qwerty123 \
 
-EXAMPLE LOGIN AS TEACHER:
-LOGIN: c
-PASSWORD :qwerty12345
+EXAMPLE LOGIN AS TEACHER: \
+LOGIN: c \
+PASSWORD :qwerty12345 \
 
-EXAMPLE LOGIN AS WORKER:
-LOGIN: ekruk@gmail.com
-PASSWORD :qwerty12345
+EXAMPLE LOGIN AS WORKER: \
+LOGIN: ekruk@gmail.com \
+PASSWORD :qwerty12345 \
 
 
 
-INSTALLATION LINUX
+INSTALLATION LINUX \ \
 
-0. Loggin as administartor :
+0. Loggin as administartor : \ \
 
-su [name]
+su [name] \\
 
-Install apache2
+Install apache2 \ \
 
-apt-get install apache2
-service apache2 status
+apt-get install apache2 \
+service apache2 status \
 
-tap localhost in your browser, you should see apache page.
+tap localhost in your browser, you should see apache page. \\
+
 2. Install php
 
 apt-get install php 7.2* //version may differ
