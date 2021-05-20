@@ -19,17 +19,17 @@ AS WORKER - you have access to students and teachers, you can manage them adding
 
 EXAMPLE LOGIN AS STUDENT: \
 LOGIN: 100006 \
-PASSWORD :qwerty123 \
+PASSWORD :qwerty123 
 
 
 EXAMPLE LOGIN AS TEACHER: \
 LOGIN: c \
-PASSWORD :qwerty12345 \
+PASSWORD :qwerty12345 
 
 
 EXAMPLE LOGIN AS WORKER: \
 LOGIN: ekruk@gmail.com \
-PASSWORD :qwerty12345 \
+PASSWORD :qwerty12345 
 
 
 
