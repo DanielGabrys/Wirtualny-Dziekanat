@@ -31,13 +31,13 @@ PASSWORD :qwerty12345 \
 
 
 
-INSTALLATION LINUX \ \
+INSTALLATION LINUX \ 
 
-0. Loggin as administartor : \ \
+0. Loggin as administartor : \ 
 
-su [name] \\
+su [name] \
 
-Install apache2 \ \
+Install apache2 \ 
 
 apt-get install apache2 \
 service apache2 status \
