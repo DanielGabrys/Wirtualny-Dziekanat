@@ -13,7 +13,7 @@ AS STUDENT - you have access to your marks and information about your faculty
 
 AS TEACHER - you have access to students data, for exmaple you can modify their marks
 
-AS WORKER - you have access to students and workers, you can manage them adding/deleting students or changing teachers
+AS WORKER - you have access to students and teachers, you can manage them adding/deleting students or changing teachers
 
 
 
@@ -42,7 +42,7 @@ Install apache2 \ \
 apt-get install apache2 \
 service apache2 status \
 
-tap localhost in your browser, you should see apache page. \\
+tap localhost in your browser, you should see apache page. \
 
 2. Install php
 
